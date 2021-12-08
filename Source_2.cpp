@@ -1,13 +1,8 @@
 #include <iostream>
 using namespace std;
-int main()
-{
-    int marks;
-    cout << "Enter the Mark" << endl;
-    cin >> marks;
 
-    while (1)
-    {
+void PrintGrade(int marks)
+{    
         if (marks < 0 || marks > 100)
             cout << "invalid marks" << endl;
         else if (marks >= 90)
@@ -21,9 +16,18 @@ int main()
         else if (marks >= 50)
             cout << "Grade is D" << endl;
         else
-            cout << "Fail" << endl;
-        cout << "Enter the Mark" << endl;
+             cout << "Fail" << endl;  
+}
+
+int main()
+{ 
+    int marks;
+    cout << "Enter the Marks" << endl;
+    cin >> marks;
+    while (1)
+    {
+        PrintGrade(marks);
+        cout << "Enter the Marks" << endl;
         cin >> marks;
     }
-    return 0;
 }
