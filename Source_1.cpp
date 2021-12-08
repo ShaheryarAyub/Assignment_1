@@ -1,11 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    int a, b, c;
-    cout << "Enter the numbers" << endl;
-    cin >> a >> b >> c;
+void pythag_func (int a, int b, int c)
+{    
     int y, z, x;
     x = max(a, max(b, c));
     if (x == a)
@@ -31,4 +28,13 @@ int main()
     {
         cout << "Not a Pythagorean triple";
     }
+}
+
+int main()
+{
+    int a, b, c;
+    cout << "Enter the numbers" << endl;
+    cin >> a >> b >> c;
+    pythag_func(a, b, c);
+
 }
