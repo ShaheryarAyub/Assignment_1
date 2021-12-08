@@ -1,16 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main()
+void calc (int num1, int num2, char op)
 {
-    char op;
-    int num1, num2;
-    cout << "Enter two numbers" << endl;
-    cin >> num1 >> num2;
-
-    cout << "Enter the operator" << endl;
-    cin >> op;
-
     switch (op)
     {
     case '+':
@@ -32,5 +24,16 @@ int main()
         cout << "Error operator is not correct";
         break;
     }
-    return 0;
+}    
+
+int main() 
+{
+    char op;
+    int num_1, num_2;
+    cout << "Enter two numbers" << endl;
+    cin >> num_1 >> num_2;
+
+    cout << "Enter the operator" << endl;
+    cin >> op;
+    calc(num_1, num_2, op);
 }
