@@ -1,1 +1,1 @@
-# Assignment_1
+•	Write a C++ program to decide whether the given three numbers are Pythagorean triple or not. This means you will take three numbers as input from the user and check if any order of the number holds the property c2=a2+b2.
