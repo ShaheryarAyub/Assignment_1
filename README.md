@@ -1,1 +1,1 @@
-Assignment No. 1 with function in C++
+Assignment No. 1 with classes in C++
