@@ -1,10 +1,18 @@
-#include <iostream>
+#include  <iostream>
 using namespace std;
 
-void pythag_func (int a, int b, int c)
-{    
-    int y, z, x;
-    x = max(a, max(b, c));
+class pythag
+{	
+private:
+    int x, y, z;
+public:   
+    void check (int, int, int);
+};
+
+void pythag::check (int a, int b, int c)
+{       
+    x = max (a, max(b, c));
+    
     if (x == a)
     {
         y = b;
@@ -32,9 +40,9 @@ void pythag_func (int a, int b, int c)
 
 int main()
 {
+    pythag val1;
     int a, b, c;
     cout << "Enter the numbers" << endl;
-    cin >> a >> b >> c;
-    pythag_func(a, b, c);
-
+    cin >> a >> b >> c;   
+    val1.check(a,b,c);
 }
