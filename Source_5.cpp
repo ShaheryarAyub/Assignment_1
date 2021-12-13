@@ -3,8 +3,6 @@ using namespace std;
 
 class check
 {
-private:
-
 public:
     void U_L_V_check (int, char);
 };
