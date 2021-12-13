@@ -1,13 +1,19 @@
 #include <iostream>
 using namespace std;
 
-void check (char character)
+class character
 {
-    if ((character >= 65 && character <= 90)
-        || (character >= 97 && character <= 122))
+public:
+    void check (char);
+};
+
+void character :: check (char ch)
+{
+    if ((ch >= 65 && ch <= 90)
+        || (ch >= 97 && ch <= 122))
         cout << " Alphabet ";
 
-    else if (character >= 48 && character <= 57)
+    else if (ch >= 48 && ch <= 57)
         cout << " Digit ";
 
     else
@@ -15,8 +21,9 @@ void check (char character)
 }
 int main()
 {
+    character cha;
     char c;
     cout << "Enter Character" << endl;
     cin >> c;
-    check(c);
+    cha.check(c);
 }
