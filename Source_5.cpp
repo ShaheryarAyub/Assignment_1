@@ -1,7 +1,15 @@
 #include <iostream>
 using namespace std;
 
-void UcaseLcaseVowel_check (int num, int c) 
+class check
+{
+private:
+
+public:
+    void U_L_V_check (int, char);
+};
+
+void check :: U_L_V_check(int num, char c)
 {
     if (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U' && c >= 'A' && c <= 'Z')
 
@@ -24,13 +32,14 @@ void UcaseLcaseVowel_check (int num, int c)
         cout << "The character is a special character and the result is: " << num << endl;
 
 }
-    int main()
-    {
-        int num;
-        char c;
-        cout << "Enter  Character" << endl;
-        cin >> c;
-        cout << "Enter Number" << endl;
-        cin >> num;
-        UcaseLcaseVowel_check(num, c);
-    }
+int main()
+{
+    check v;
+    int num;
+    char c;
+    cout << "Enter  Character" << endl;
+    cin >> c;
+    cout << "Enter Number" << endl;
+    cin >> num;
+    v.U_L_V_check (num, c);
+}
